@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+<!--  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">-->
+  <title>INTERIOR LOUNGE — дизайн общественных пространств</title>
+</head>
+
+<body class="page__body">
+
+<header class="header">
+  <div class="header__inner">
+    <a class="header__logo-link" href="#">
+      <picture class="header__container-logo-image">
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="170" height="36">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="82" height="36">
+        <img class="header__logo-image" src="img/logo/logo.svg" width="32" height="36" alt="логотип drink2go">
+      </picture>
+    </a>
+    <div class="header__title-box">
+      <h1 class=" header__title">Интернет-магазин кофейных напитков</h1>
+    </div>
+
+    <nav class="header__navigation navigation navigation--closed navigation--nojs">
+      <button class="navigation__button-menu">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--active">
+          <a class="navigation__item-link" href="#">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#" aria-label="Ссылка на страницу каталога">Каталог</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#" aria-label="Ссылка на страницу доставки">Доставка</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__item-link" href="#" aria-label="Ссылка на страницу о нас">О нас</a>
+        </li>
+      </ul>
+
+      <a class="navigation__link" href="#">
+        <svg
+          class="navigation__link-image"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="none"
+          viewBox="0 0 16 16"
+        >
+          <path
+            class="navigation__link-element-image"
+            fill="#333"
+            fill-rule="evenodd"
+            d="M10.667 4a2.667 2.667 0 1 1-5.334 0 2.667 2.667 0 0 1 5.334 0ZM12 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-8.803 8.31C4.437 11.277 6.16 10.667 8 10.667s3.564.61 4.803 1.643c1.232 1.027 1.864 2.362 1.864 3.69H16c0-1.768-.843-3.464-2.343-4.714-1.5-1.25-3.535-1.953-5.657-1.953s-4.157.703-5.657 1.953S0 14.232 0 16h1.333c0-1.328.632-2.663 1.864-3.69Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span class="navigation__link-text">Войти</span>
+      </a>
+      <a class="navigation__link" href="#">
+        <svg
+          class="navigation__link-image"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="none"
+          viewBox="0 0 16 16"
+        >
+          <path
+            class="navigation__link-element-image"
+            fill="#333"
+            fill-rule="evenodd"
+            d="m5.66 3.875.234 2.792h4.213l.232-2.792a2.347 2.347 0 1 0-4.678 0Zm5.784 2.792.224-2.68a3.68 3.68 0 1 0-7.336 0l.224 2.68H0L.19 8l.816 5.71A2.667 2.667 0 0 0 3.646 16h8.708a2.667 2.667 0 0 0 2.64-2.29L15.81 8 16 6.667h-4.556ZM11.334 8h-.054l-.222 2.667h3.024L14.462 8h-3.129ZM9.941 8H6.058l.222 2.667h3.44L9.942 8ZM4.72 8H1.537l.381 2.667h3.024L4.72 8Zm1.893 6.667L6.391 12H9.61l-.222 2.667H6.613ZM10.947 12l-.222 2.667h1.629c.663 0 1.226-.488 1.32-1.145L13.89 12h-2.944Zm-5.894 0 .222 2.667H3.646a1.333 1.333 0 0 1-1.32-1.145L2.11 12h2.944Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span class="navigation__link-text">Корзина</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="slider">
+    <button class="slider__button slider__button-prev" type="button">
+      <svg
+        class="slider__button-image slider__button-image--prev"
+        xmlns="http://www.w3.org/2000/svg"
+        width="11"
+        height="20"
+        fill="none"
+        viewBox="0 0 11 20"
+      >
+        <path
+          class="slider__button-image-element"
+          fill="#7859CF"
+          fill-rule="evenodd"
+          d="M9.7 0 11 1.3 2.6 10l8.4 8.7L9.7 20 0 10 9.7 0Z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <button class="slider__button slider__button-next" type="button">
+      <svg
+        class="slider__button-image slider__button-image--next"
+        xmlns="http://www.w3.org/2000/svg"
+        width="11"
+        height="20"
+        fill="none"
+        viewBox="0 0 11 20"
+      >
+        <path
+          class="slider__button-image-element"
+          fill="#7859CF"
+          fill-rule="evenodd"
+          d="M1.3 0 0 1.3 8.4 10 0 18.7 1.3 20 11 10 1.3 0Z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <h2 class="slider__title visually-hidden">Слайдер</h2>
+    <ul class="slider__list">
+      <li class="slider__item slider__item--triple-espresso">
+        <div class="slider__item-part-1">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/slider/triple-espresso/slider-triple-espresso-desktop.webp 1x, img/slider/triple-espresso/slider-triple-espresso-desktop@2x.webp 2x"
+              type="image/webp"
+              width="600"
+              height="600"
+            >
+            <source
+              media="(min-width: 768px)"
+              srcset="img/slider/triple-espresso/slider-triple-espresso-tablet.webp 1x, img/slider/triple-espresso/slider-triple-espresso-tablet@2x.webp 2x"
+              type="image/webp"
+              width="476"
+              height="476"
+            >
+            <source
+              srcset="img/slider/triple-espresso/slider-triple-espresso-mobile.webp 1x, img/slider/triple-espresso/slider-triple-espresso-mobile@x2.webp 2x"
+              type="image/webp"
+              width="280"
+              height="280"
+            >
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/slider/triple-espresso/slider-triple-espresso-desktop.png 1x, img/slider/triple-espresso/slider-triple-espresso-desktop@2x.png 2x"
+              width="600"
+              height="600"
+            >
+            <source
+              media="(min-width: 768px)"
+              srcset="img/slider/triple-espresso/slider-triple-espresso-tablet.png 1x, img/slider/triple-espresso/slider-triple-espresso-tablet@2x.png 2x"
+              width="476"
+              height="476"
+            >
+            <img
+              class="slider__item-part-1-image"
+              src="img/slider/triple-espresso/slider-triple-espresso-mobile.png"
+              srcset="img/slider/triple-espresso/slider-triple-espresso-mobile@x2.png"
+              width="280"
+              height="280"
+              alt="Пример нашего товара"
+            >
+          </picture>
+        </div>
+        <div class="slider__item-part-2 description-slide">
+          <span class="description-slide__new">Новинка!</span>
+          <h3 class="description-slide__title">Тройной Эспрессо</h3>
+          <p class="description-slide__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+            Колумбии покажет вам, что такое настоящая бодрость</p>
+          <div class="description-slide__footer">
+            <div class="description-slide__footer-price">
+              <del class="description-slide__footer-old-price">395₽</del>
+              <span class="description-slide__footer-new-price">375₽</span>
+            </div>
+            <button class="description-slide__footer-buy" type="button">Заказать</button>
+          </div>
+        </div>
+      </li>
+      <li class="slider__item slider__item--decaf-flat-white">
+        <div class="slider__item-part-1">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-desktop.webp 1x, img/slider/decaf-flat-white/slider-decaf-flat-white-desktop@2x.webp 2x"
+              width="600"
+              height="600"
+            >
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-tablet.webp 1x, img/slider/decaf-flat-white/slider-decaf-flat-white-tablet@2x.webp 2x"
+              width="476"
+              height="476"
+            >
+            <source
+              type="image/webp"
+              srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-mobile.webp 1x, img/slider/decaf-flat-white/slider-decaf-flat-white-mobile@2x.webp 2x"
+              width="280"
+              height="280"
+            >
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-desktop.png 1x, img/slider/decaf-flat-white/slider-decaf-flat-white-desktop@2x.png 2x"
+              width="600"
+              height="600"
+            >
+            <source
+              media="(min-width: 768px)"
+              srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-tablet.png 1x, img/slider/decaf-flat-white/slider-decaf-flat-white-tablet@2x.png 2x"
+              width="476"
+              height="476"
+            >
+            <img
+              class="slider__item-part-1-image"
+              src="img/slider/decaf-flat-white/slider-decaf-flat-white-mobile.png"
+              srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-mobile@2x.png 2x"
+              width="280"
+              height="280"
+              alt="Пример нашего товара"
+            >
+          </picture>
+        </div>
+        <div class="slider__item-part-2 description-slide">
+          <span class="description-slide__new">Новинка!</span>
+          <h3 class="description-slide__title">Декаф Флэт Уайт</h3>
+          <p class="description-slide__text">
+            <span class="description-slide__text-1">Свежесваренный кофе без кофеина из Эфиопии</span>
+            <span class="description-slide__text-2">с натуральным фермерским молоком
+            — то, что нужно для расслабления после тяжёлого рабочего дня</span>
+          </p>
+          <div class="description-slide__footer">
+            <div class="description-slide__footer-price">
+              <del class="description-slide__footer-old-price">295₽</del>
+              <span class="description-slide__footer-new-price">225₽</span>
+            </div>
+            <button class="description-slide__footer-buy" type="button">Заказать</button>
+          </div>
+        </div>
+      </li>
+      <li class="slider__item slider__item--lavender-latte">
+        <div class="slider__item-part-1">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="img/slider/lavender-latte/slider-lavender-latte-desktop.webp 1x, img/slider/lavender-latte/slider-lavender-latte-desktop@x2.webp 2x"
+              width="600"
+              height="600"
+            >
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/slider/lavender-latte/slider-lavender-latte-tablet.webp 1x, img/slider/lavender-latte/slider-lavender-latte-tablet@x2.webp 2x"
+              width="476"
+              height="476"
+            >
+            <source
+              type="image/webp"
+              srcset="img/slider/lavender-latte/slider-lavender-latte-mobile.webp 1x, img/slider/lavender-latte/slider-lavender-latte-mobile@x2.webp 2x"
+              width="280"
+              height="280"
+            >
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/slider/lavender-latte/slider-lavender-latte-desktop.png 1x, img/slider/lavender-latte/slider-lavender-latte-desktop@x2.png 2x"
+              width="600"
+              height="600"
+            >
+            <source
+              media="(min-width: 768px)"
+              srcset="img/slider/lavender-latte/slider-lavender-latte-tablet.png 1x, img/slider/lavender-latte/slider-lavender-latte-tablet@x2.png 2x"
+              width="476"
+              height="476"
+            >
+            <img
+              class="slider__item-part-1-image"
+              src="img/slider/lavender-latte/slider-lavender-latte-mobile.png"
+              srcset="img/slider/lavender-latte/slider-lavender-latte-mobile@x2.png"
+              width="280"
+              height="280"
+              alt="Пример нашего товара"
+            >
+          </picture>
+        </div>
+        <div class="slider__item-part-2 description-slide">
+          <span class="description-slide__new">Новинка!</span>
+          <h3 class="description-slide__title">Лавандовый Латте</h3>
+          <p class="description-slide__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+            лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+          <div class="description-slide__footer">
+            <div class="description-slide__footer-price">
+              <del class="description-slide__footer-old-price">285₽</del>
+              <span class="description-slide__footer-new-price">265₽</span>
+            </div>
+            <button class="description-slide__footer-buy" type="button">Заказать</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+    <div class="slider__pagination slider-pagination">
+      <ul class="slider-pagination__list">
+        <li class="slider-pagination__item slider-pagination__item--active">
+          <button class="slider-pagination__item-button slider-pagination__item-button--active">
+            <svg
+              class="slider-pagination__item-image"
+              xmlns="http://www.w3.org/2000/svg" width="62" height="4" fill="none" viewBox="0 0 62 4"
+            >
+              <path class="slider-pagination__item-image-element" fill="#fff" d="M0 0h62v4H0z"/>
+            </svg>
+          </button>
+        </li>
+        <li class="slider-pagination__item">
+          <button class="slider-pagination__item-button">
+            <svg
+              class="slider-pagination__item-image"
+              xmlns="http://www.w3.org/2000/svg"
+              width="62"
+              height="4"
+              fill="none"
+              viewBox="0 0 62 4"
+            >
+              <path class="slider-pagination__item-image-element" fill="#fff" d="M0 0h62v4H0z"/>
+            </svg>
+          </button>
+        </li>
+        <li class="slider-pagination__item">
+          <button class="slider-pagination__item-button">
+            <svg
+              class="slider-pagination__item-image"
+              xmlns="http://www.w3.org/2000/svg"
+              width="62"
+              height="4"
+              fill="none"
+              viewBox="0 0 62 4"
+            >
+              <path class="slider-pagination__item-image-element" fill="#fff" d="M0 0h62v4H0z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="advantages">
+    <div class="advantages__inner">
+      <h2 class="advantages__title">Преимущества</h2>
+      <span class="advantages__title-text">Главные причины выбрать Drink2Go</span>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img src="img/advantages/advantage-speed.svg" width="50" height="56" alt="скорость">
+          <div class="advantages__item-inner">
+            <h3 class="advantages__item-inner-title">Скорость</h3>
+            <p class="advantages__item-inner-text">Готовый напиток всегда под рукой — просто открой банку</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <img src="img/advantages/advantage-convenience.svg" width="52" height="56" alt="удобство">
+          <div class="advantages__item-inner">
+            <h3 class="advantages__item-inner-title">Удобство</h3>
+            <p class="advantages__item-inner-text">Легко помещается и в карман,
+              и в маленькую сумочку</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <img src="img/advantages/advantage-cheerfulness.svg" width="42" height="56" alt="бодрость">
+          <div class="advantages__item-inner">
+            <h3 class="advantages__item-inner-title">Бодрость</h3>
+            <p class="advantages__item-inner-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <img
+            src="img/advantages/advantages-environmental-friendliness.svg"
+            width="46"
+            height="56"
+            alt="экологичность"
+          >
+          <div class="advantages__item-inner">
+            <h3 class="advantages__item-inner-title">Экологичность</h3>
+            <p class="advantages__item-inner-text">Вся упаковка сделана
+              из перерабатываемых материалов</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="catalog__inner">
+      <div class="catalog__title-box">
+        <h2 class="catalog__title">Каталог</h2>
+        <span class="catalog__title-text">Каталог кофейных напитков</span>
+      </div>
+
+      <section class="catalog__sorting-goods">
+        <h3 class="visually-hidden">фильтр</h3>
+        <form class="catalog__filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="catalog__filter-form-fieldset range-fieldset">
+            <legend class="range-fieldset__legend visually-hidden">цена</legend>
+            <h4 class="range-fieldset__title catalog__filter-form-fieldset-title">Цена</h4>
+            <div class="range-fieldset__slider" id="range-slider"></div>
+            <div class="range-fieldset__input-box">
+              <label class="range-fieldset__input-label">
+                <input class="range-fieldset__input" type="number" min="0" max="900" placeholder="0" id="input-min-price">
+              </label>
+              <div class="range-fieldset__dash">
+                <img class="range-fieldset__dash-image" src="img/form-filter/dash.svg" width="8" height="2" alt="тире">
+              </div>
+              <label class="range-fieldset__input-label">
+                <input class="range-fieldset__input" type="number" min="0" max="900" placeholder="123"id="input-max-price">
+              </label>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="vendor/nouislider/nouislider.js"></script>
+<script src="js/main.js" type="module"></script>
+
+</body>
+
+</html>

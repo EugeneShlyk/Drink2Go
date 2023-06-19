@@ -1,0 +1,135 @@
+.description-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .description-slide {
+    width: 608px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .description-slide {
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.description-slide__new {
+  color: rgba(120, 89, 207, 1);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  padding: 0;
+}
+
+.description-slide__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .description-slide__title {
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+.description-slide__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .description-slide__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .description-slide__text {
+    margin-bottom: 40px;
+    padding: 0;
+    text-align: start;
+  }
+}
+
+.description-slide__footer {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.description-slide__footer-price {
+  margin: 0;
+  padding: 0;
+}
+
+.description-slide__footer-old-price {
+  margin: 0;
+  padding: 0;
+  color: rgba(120, 89, 207, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.description-slide__footer-new-price {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.description-slide__footer-buy {
+  margin: 0;
+  padding: 8px 20px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(120, 89, 207, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.description-slide__footer-buy:hover:not(:disabled),
+.description-slide__footer-buy:focus-visible:not(:disabled) {
+  background-color: rgba(144, 112, 236, 1);
+}
+
+.description-slide__footer-buy:active:not(:disabled) {
+  background-color: rgba(120, 89, 207, 1);
+}
+
+.description-slide__footer-buy:disabled {
+  background-color: rgba(189, 189, 189, 1);
+  cursor: auto;
+}
