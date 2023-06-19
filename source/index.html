@@ -5,7 +5,7 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-<!--  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">-->
+  <!--  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">-->
   <title>INTERIOR LOUNGE — дизайн общественных пространств</title>
 </head>
 
@@ -413,16 +413,115 @@
             <div class="range-fieldset__slider" id="range-slider"></div>
             <div class="range-fieldset__input-box">
               <label class="range-fieldset__input-label">
-                <input class="range-fieldset__input" type="number" min="0" max="900" placeholder="0" id="input-min-price">
+                <input
+                  class="range-fieldset__input"
+                  type="number"
+                  min="0"
+                  max="900"
+                  placeholder="0"
+                  id="input-min-price"
+                >
               </label>
               <div class="range-fieldset__dash">
                 <img class="range-fieldset__dash-image" src="img/form-filter/dash.svg" width="8" height="2" alt="тире">
               </div>
               <label class="range-fieldset__input-label">
-                <input class="range-fieldset__input" type="number" min="0" max="900" placeholder="123"id="input-max-price">
+                <input
+                  class="range-fieldset__input"
+                  type="number"
+                  min="0"
+                  max="900"
+                  placeholder="123"
+                  id="input-max-price"
+                >
               </label>
             </div>
           </fieldset>
+          <fieldset class="catalog__filter-form-fieldset milk-fieldset">
+            <legend class="milk-fieldset__legend visually-hidden">Наличие молока</legend>
+            <h4 class="milk-fieldset__title catalog__filter-form-fieldset-title">Наличие молока</h4>
+            <ul class="milk-fieldset__list">
+              <li class="milk-fieldset__item">
+                <label class="milk-fieldset__item-label">
+                  <span class="visually-hidden">выбрать вариант Неважно</span>
+                  <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="doesnt-matter" checked>
+                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-text">Неважно</span>
+                </label>
+              </li>
+              <li class="milk-fieldset__item">
+                <label class="milk-fieldset__item-label">
+                  <span class="visually-hidden">выбрать вариант Только животное</span>
+                  <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="animal-milk">
+                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-text">Только животное</span>
+                </label>
+              </li>
+              <li class="milk-fieldset__item">
+                <label class="milk-fieldset__item-label">
+                  <span class="visually-hidden">выбрать вариант Только растительное</span>
+                  <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="animal-milk">
+                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-text">Только растительное</span>
+                </label>
+              </li>
+              <li class="milk-fieldset__item">
+                <label class="milk-fieldset__item-label">
+                  <span class="visually-hidden">выбрать вариант Без молока</span>
+                  <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="animal-milk" disabled>
+                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-text">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="country-fieldset catalog__filter-form-fieldset ">
+            <legend class="country-fieldset__legend visually-hidden">Выбор страны производителя зёрен кофе</legend>
+            <h4 class="country-fieldset__title catalog__filter-form-fieldset-title">Страна произрастания</h4>
+            <ul class="country-fieldset__list">
+              <li class="country-fieldset__item">
+                <label class="country-fieldset__item-label">
+                  <span class="visually-hidden">выбрать Бразилию</span>
+                  <input class="country-fieldset__input visually-hidden" type="checkbox" name="Brazil" checked>
+                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-text">Бразилия</span>
+                </label>
+              </li>
+              <li class="country-fieldset__item">
+                <label class="country-fieldset__item-label">
+                  <span class="visually-hidden">выбрать Эфиопию</span>
+                  <input class="country-fieldset__input visually-hidden" type="checkbox" name="Ethiopia">
+                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-text">Эфиопия</span>
+                </label>
+              </li>
+              <li class="country-fieldset__item">
+                <label class="country-fieldset__item-label">
+                  <span class="visually-hidden">выбрать Колумбию</span>
+                  <input class="country-fieldset__input visually-hidden" type="checkbox" name="Colombia">
+                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-text">Колумбия</span>
+                </label>
+              </li>
+              <li class="country-fieldset__item">
+                <label class="country-fieldset__item-label">
+                  <span class="visually-hidden">выбрать Коста-Рику</span>
+                  <input class="country-fieldset__input visually-hidden" type="checkbox" name="Costa-Rica">
+                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-text">Коста-Рика</span>
+                </label>
+              </li>
+              <li class="country-fieldset__item">
+                <label class="country-fieldset__item-label">
+                  <span class="visually-hidden">выбрать Перу</span>
+                  <input class="country-fieldset__input visually-hidden" type="checkbox" name="Peru" disabled>
+                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-text">Перу</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
         </form>
       </section>
 
