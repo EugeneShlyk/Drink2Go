@@ -6,21 +6,41 @@
   list-style: none;
 }
 
+@media (min-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
 .product-list__item {
   margin: 0;
-  padding: 40px 20px 20px;
+  padding: 0 20px 20px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .product-list__item {
+    padding: 0 30px 30px;
+  }
 }
 
 .product-list__item-image-link {
   display: block;
   width: 100%;
   margin: 0;
-  padding: 0 0 24px;
+  padding: 40px 0 24px;
   color: rgba(51, 51, 51, 1);
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .product-list__item-image-link {
+    padding: 50px 0 30px;
+  }
+}
+
 .product-list__item-image {
   display: block;
   margin: 0 auto;
@@ -32,7 +52,12 @@
   padding: 0 0 4px;
   color: rgba(51, 51, 51, 1);
   text-decoration: none;
+}
 
+@media (min-width: 768px) {
+  .product-list__item-title-link {
+    padding-bottom: 10px;
+  }
 }
 
 .product-list__item-title {
@@ -43,12 +68,25 @@
   line-height: 32px;
 }
 
+@media (min-width: 768px) {
+  .product-list__item-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
 .product-list__item-text {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .product-list__item-text {
+    margin-bottom: 20px;
+  }
 }
 
 .product-list__item-footer {
@@ -73,7 +111,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  //background-color: ;
   background: rgba(120, 89, 207, 1) url("./../../img/product-list/basket-pdoduct-card.svg") 10% 50% / 20px 16px no-repeat;
   border: none;
   border-radius: 4px;
@@ -81,3 +118,16 @@
 }
 
 
+.product-list__item-button:hover,
+.product-list__item-button:focus-visible {
+  background-color: rgba(144, 112, 236, 1);
+}
+
+.product-list__item-button:active {
+  background-color: rgba(89, 60, 172, 1);
+}
+
+.product-list__item-button:disabled {
+  background-color: rgba(189, 189, 189, 1);
+  cursor: auto;
+}

@@ -123,10 +123,15 @@
  * Giving the connect element a border radius causes issues with using transform: scale
  */
 .noUi-target {
-  margin-left: 5px;
+  margin-left: 0;
   margin-bottom: 34px;
   background: rgba(226, 226, 226, 1);
   border: none;
+}
+@media (min-width: 768px) {
+  .noUi-target {
+    margin-bottom: 30px;
+  }
 }
 .noUi-connect {
   background: rgba(144, 112, 236, 1);

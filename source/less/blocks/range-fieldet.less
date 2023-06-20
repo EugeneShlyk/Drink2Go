@@ -12,11 +12,18 @@ input[type=number] {
 
 .range-fieldset {
   margin: 0 0 30px;
+  padding: 0;
 }
 
 .range-fieldset__slider {
   width: 257px;
-  padding: 0 0 05px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .range-fieldset__slider {
+    width: 100%;
+  }
 }
 
 .range-fieldset__input-box {
@@ -26,11 +33,23 @@ input[type=number] {
   width: 280px;
 }
 
+@media (min-width: 768px) {
+  .range-fieldset__input-box {
+    width: 223px;
+  }
+}
+
 .range-fieldset__input-label {
   display: flex;
   justify-content: center;
   width: 118px;
   box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .range-fieldset__input-label {
+    width: 87px;
+  }
 }
 
 .range-fieldset__input {
@@ -42,8 +61,6 @@ input[type=number] {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  //border: none;
-  //border-radius: 4px;
 }
 
 .range-fieldset__input:hover:not(:disabled),
