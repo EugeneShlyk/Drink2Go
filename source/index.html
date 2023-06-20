@@ -5,7 +5,6 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <!--  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">-->
   <title>INTERIOR LOUNGE — дизайн общественных пространств</title>
 </head>
 
@@ -444,7 +443,13 @@
               <li class="milk-fieldset__item">
                 <label class="milk-fieldset__item-label">
                   <span class="visually-hidden">выбрать вариант Неважно</span>
-                  <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="doesnt-matter" checked>
+                  <input
+                    class="milk-fieldset__input visually-hidden"
+                    type="radio"
+                    name="milk"
+                    value="doesnt-matter"
+                    checked
+                  >
                   <div class="milk-fieldset__item-control-mark"></div>
                   <span class="milk-fieldset__item-text">Неважно</span>
                 </label>
@@ -468,14 +473,20 @@
               <li class="milk-fieldset__item">
                 <label class="milk-fieldset__item-label">
                   <span class="visually-hidden">выбрать вариант Без молока</span>
-                  <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="animal-milk" disabled>
+                  <input
+                    class="milk-fieldset__input visually-hidden"
+                    type="radio"
+                    name="milk"
+                    value="animal-milk"
+                    disabled
+                  >
                   <div class="milk-fieldset__item-control-mark"></div>
                   <span class="milk-fieldset__item-text">Без молока</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="country-fieldset catalog__filter-form-fieldset ">
+          <fieldset class="catalog__filter-form-fieldset  country-fieldset">
             <legend class="country-fieldset__legend visually-hidden">Выбор страны производителя зёрен кофе</legend>
             <h4 class="country-fieldset__title catalog__filter-form-fieldset-title">Страна произрастания</h4>
             <ul class="country-fieldset__list">
@@ -521,10 +532,271 @@
               </li>
             </ul>
           </fieldset>
+          <div class="catalog__box-button">
+            <button class="catalog__box-button-submit" type="submit">Применить</button>
+            <input class="catalog__box-button-reset" type="reset">
+          </div>
 
         </form>
       </section>
-
+      <section class="products catalog__product">
+        <h2 class="visually-hidden">блок списка товаров</h2>
+        <div class="select-box products__select-box">
+          <label class="select-box__text" for="select-product">Сортировка:</label>
+          <select class="select-box__menu" name="sort-product" id="select-product" size="1">
+            <option label="по умолчанию" value="default" selected>по умолчанию</option>
+            <option label="сначала дорогие" value="expensive">сначала дорогие</option>
+            <option label="сначала дешёвые" value="inexpensive">сначала дешёвые</option>
+            <option label="высокий рейтинг" value="rating">высокий рейтинг</option>
+          </select>
+        </div>
+        <ul class="product-list products__list">
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/white-jar/white-jar.webp 1x, img/product-list/white-jar/white-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/white-jar/white-jar.png"
+                  srcset="img/product-list/white-jar/white-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в белой банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/lavender-jar/lavender-jar.webp 1x, img/product-list/lavender-jar/lavender-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/lavender-jar/lavender-jar.png"
+                  srcset="img/product-list/lavender-jar/lavender-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в лавандовой банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/black-jar/black-jar.webp 1x, img/product-list/black-jar/black-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/black-jar/black-jar.png"
+                  srcset="img/product-list/black-jar/black-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в чёрной банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/pink-jar/pink-jar.webp 1x, img/product-list/pink-jar/pink-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/pink-jar/pink-jar.png"
+                  srcset="img/product-list/pink-jar/pink-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в розовой банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/brown-jar/brown-jar.webp 1x, img/product-list/brown-jar/brown-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/brown-jar/brown-jar.png"
+                  srcset="img/product-list/brown-jar/brown-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в коричневой банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/yellow-jar/yellow-jar.webp 1x, img/product-list/yellow-jar/yellow-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/yellow-jar/yellow-jar.png"
+                  srcset="img/product-list/yellow-jar/yellow-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в жёлтой банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/orange-jar/orange-jar.webp 1x, img/product-list/orange-jar/orange-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/orange-jar/orange-jar.png"
+                  srcset="img/product-list/orange-jar/orange-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в оранжевой банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/green-jar/green-jar.webp 1x, img/product-list/green-jar/green-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/green-jar/green-jar.png"
+                  srcset="img/product-list/green-jar/green-jar@2x.png 2x"
+                  width="130"
+                  height="188"
+                  alt="кофе в зелёной банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__item-image-link" href="#">
+              <picture>
+                <source srcset="img/product-list/blue-jar/blue-jar.webp 1x, img/product-list/blue-jar/blue-jar@2x.webp 2x">
+                <img
+                  class="product-list__item-image"
+                  src="img/product-list/blue-jar/blue-jar.png"
+                  width="130"
+                  height="188"
+                  alt="кофе в синей банке"
+                >
+              </picture>
+            </a>
+            <a class="product-list__item-title-link" href="#">
+              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="product-list__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="product-list__item-footer">
+              <span class="product-list__item-footer-text">225₽</span>
+              <button class="product-list__item-button" type="button">В корзину</button>
+            </div>
+          </li>
+        </ul>
+        <div class="product-pagination products__footer">
+          <button class="product-pagination__button product-pagination__button--prev" type="button" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" fill="none" viewBox="0 0 6 10">
+              <path
+                class="product-pagination__button-image"
+                fill="#7859CF"
+                fill-rule="evenodd"
+                d="M4.8 0 6 1.2 2.4 5 6 8.8 4.8 10 0 5l4.8-5Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <ol class="product-pagination__list">
+            <li class="product-pagination__list-item product-pagination__list-item--current">1</li>
+            <li class="product-pagination__list-item">2</li>
+            <li class="product-pagination__list-item">3</li>
+          </ol>
+          <button class="product-pagination__button product-pagination__button--next" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" fill="none" viewBox="0 0 6 10">
+              <path
+                class="product-pagination__button-image"
+                fill="#7859CF"
+                fill-rule="evenodd"
+                d="M1.2 0 0 1.2 3.6 5 0 8.8 1.2 10 6 5 1.2 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
     </div>
   </section>
 </main>
