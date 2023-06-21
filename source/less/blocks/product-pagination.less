@@ -22,6 +22,33 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
+@media (min-width: 768px) {
+  .product-pagination__button {
+    width: 91px;
+  }
+
+  .product-pagination__button-image {
+    display: none;
+  }
+}
+
+.product-pagination__button-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .product-pagination__button-text {
+    display: inline;
+  }
+}
+
+.product-pagination__button-text {
+  color: rgba(120, 89, 207, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .product-pagination__button:not(:disabled) {
   cursor: pointer;
 }
@@ -31,9 +58,14 @@
   background-color: rgba(144, 112, 236, 1);
 }
 
-.product-pagination__button:hover .product-pagination__button-image,
-.product-pagination__button:focus-visible .product-pagination__button-image {
+.product-pagination__button:hover .product-pagination__button-image-element,
+.product-pagination__button:focus-visible .product-pagination__button-image-element {
   fill: rgba(255, 255, 255, 1);
+}
+
+.product-pagination__button:hover:not(:disabled) .product-pagination__button-text,
+.product-pagination__button:focus-visible .product-pagination__button-text {
+  color: rgba(255, 255, 255, 1);
 }
 
 .product-pagination__button:active {
@@ -44,9 +76,14 @@
   background-color: rgba(226, 226, 226, 1);
 }
 
-.product-pagination__button:disabled .product-pagination__button-image {
+.product-pagination__button:disabled .product-pagination__button-image-element {
   fill: rgba(255, 255, 255, 1);
 }
+
+.product-pagination__button:disabled .product-pagination__button-text {
+  color: rgba(255, 255, 255, 1);
+}
+
 
 .product-pagination__list {
   display: grid;
@@ -58,10 +95,8 @@
 }
 
 .product-pagination__list-item {
-
   margin: 0;
   padding: 0;
-
 }
 
 .product-pagination__list-item-button {
@@ -84,20 +119,16 @@
   background-color: rgba(144, 112, 236, 1);
 }
 
-.product-pagination__list-item-button:active {
+.product-pagination__list-item-button:active:not(.product-pagination__list-item-button--current):not(:disabled) {
   background-color: rgba(89, 60, 172, 1);
 }
 
-.product-pagination__list-item-button:disabled {
+.product-pagination__list-item-button:disabled:not(.product-pagination__list-item-button--current) {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(226, 226, 226, 1);
 }
 
-//.product-pagination__list-item-button:disabled .
-
-//.product-pagination__list-item-button:not(:disabled)
-.product-pagination__list-item-button:not(.product-pagination__list-item-button--current):not(:disabled)
- {
+.product-pagination__list-item-button:not(.product-pagination__list-item-button--current):not(:disabled) {
   cursor: pointer;
 }
 

@@ -36,6 +36,7 @@
     grid-template-columns: 318px 1fr;
     column-gap: 30px;
     row-gap: 40px;
+    width: 1360px;
   }
 }
 
@@ -90,7 +91,7 @@
 @media (min-width: 768px) {
   .catalog__filter-form {
     display: grid;
-    //grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 40px;
   }
@@ -98,7 +99,10 @@
 
 @media (min-width: 1440px) {
   .catalog__filter-form {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    //grid-template-columns: 1fr;
   }
 }
 
@@ -133,6 +137,12 @@
     grid-column: 1 / 4;
     justify-self: center;
     margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog__box-button {
+    width: 100%;
   }
 }
 

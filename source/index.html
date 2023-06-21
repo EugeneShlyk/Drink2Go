@@ -2,10 +2,9 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drink2Go</title>
   <link rel="stylesheet" href="css/style.css">
-  <title>INTERIOR LOUNGE — дизайн общественных пространств</title>
 </head>
 
 <body class="page__body">
@@ -14,9 +13,9 @@
   <div class="header__inner">
     <a class="header__logo-link" href="#">
       <picture class="header__container-logo-image">
-        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="170" height="36">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="82" height="36">
-        <img class="header__logo-image" src="img/logo/logo.svg" width="32" height="36" alt="логотип drink2go">
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop-logo-footer.svg" width="170" height="36">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-logo-footer-mobile.svg" width="82" height="36">
+        <img class="header__logo-image" src="img/logo/logo-mobile.svg" width="32" height="36" alt="логотип drink2go">
       </picture>
     </a>
     <div class="header__title-box">
@@ -450,7 +449,7 @@
                     value="doesnt-matter"
                     checked
                   >
-                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-control-mark"></span>
                   <span class="milk-fieldset__item-text">Неважно</span>
                 </label>
               </li>
@@ -458,7 +457,7 @@
                 <label class="milk-fieldset__item-label">
                   <span class="visually-hidden">выбрать вариант Только животное</span>
                   <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="animal-milk">
-                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-control-mark"></span>
                   <span class="milk-fieldset__item-text">Только животное</span>
                 </label>
               </li>
@@ -466,7 +465,7 @@
                 <label class="milk-fieldset__item-label">
                   <span class="visually-hidden">выбрать вариант Только растительное</span>
                   <input class="milk-fieldset__input visually-hidden" type="radio" name="milk" value="animal-milk">
-                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-control-mark"></span>
                   <span class="milk-fieldset__item-text">Только растительное</span>
                 </label>
               </li>
@@ -480,7 +479,7 @@
                     value="animal-milk"
                     disabled
                   >
-                  <div class="milk-fieldset__item-control-mark"></div>
+                  <span class="milk-fieldset__item-control-mark"></span>
                   <span class="milk-fieldset__item-text">Без молока</span>
                 </label>
               </li>
@@ -494,7 +493,7 @@
                 <label class="country-fieldset__item-label">
                   <span class="visually-hidden">выбрать Бразилию</span>
                   <input class="country-fieldset__input visually-hidden" type="checkbox" name="Brazil" checked>
-                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-control-mark"></span>
                   <span class="country-fieldset__item-text">Бразилия</span>
                 </label>
               </li>
@@ -502,7 +501,7 @@
                 <label class="country-fieldset__item-label">
                   <span class="visually-hidden">выбрать Эфиопию</span>
                   <input class="country-fieldset__input visually-hidden" type="checkbox" name="Ethiopia">
-                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-control-mark"></span>
                   <span class="country-fieldset__item-text">Эфиопия</span>
                 </label>
               </li>
@@ -510,7 +509,7 @@
                 <label class="country-fieldset__item-label">
                   <span class="visually-hidden">выбрать Колумбию</span>
                   <input class="country-fieldset__input visually-hidden" type="checkbox" name="Colombia">
-                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-control-mark"></span>
                   <span class="country-fieldset__item-text">Колумбия</span>
                 </label>
               </li>
@@ -518,7 +517,7 @@
                 <label class="country-fieldset__item-label">
                   <span class="visually-hidden">выбрать Коста-Рику</span>
                   <input class="country-fieldset__input visually-hidden" type="checkbox" name="Costa-Rica">
-                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-control-mark"></span>
                   <span class="country-fieldset__item-text">Коста-Рика</span>
                 </label>
               </li>
@@ -526,7 +525,7 @@
                 <label class="country-fieldset__item-label">
                   <span class="visually-hidden">выбрать Перу</span>
                   <input class="country-fieldset__input visually-hidden" type="checkbox" name="Peru" disabled>
-                  <div class="country-fieldset__item-control-mark"></div>
+                  <span class="country-fieldset__item-control-mark"></span>
                   <span class="country-fieldset__item-text">Перу</span>
                 </label>
               </li>
@@ -554,7 +553,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/white-jar/white-jar.webp 1x, img/product-list/white-jar/white-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/white-jar/white-jar.webp 1x, img/product-list/white-jar/white-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/white-jar/white-jar.png"
@@ -578,7 +580,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/lavender-jar/lavender-jar.webp 1x, img/product-list/lavender-jar/lavender-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/lavender-jar/lavender-jar.webp 1x, img/product-list/lavender-jar/lavender-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/lavender-jar/lavender-jar.png"
@@ -602,7 +607,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/black-jar/black-jar.webp 1x, img/product-list/black-jar/black-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/black-jar/black-jar.webp 1x, img/product-list/black-jar/black-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/black-jar/black-jar.png"
@@ -626,7 +634,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/pink-jar/pink-jar.webp 1x, img/product-list/pink-jar/pink-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/pink-jar/pink-jar.webp 1x, img/product-list/pink-jar/pink-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/pink-jar/pink-jar.png"
@@ -650,7 +661,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/brown-jar/brown-jar.webp 1x, img/product-list/brown-jar/brown-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/brown-jar/brown-jar.webp 1x, img/product-list/brown-jar/brown-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/brown-jar/brown-jar.png"
@@ -674,7 +688,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/yellow-jar/yellow-jar.webp 1x, img/product-list/yellow-jar/yellow-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/yellow-jar/yellow-jar.webp 1x, img/product-list/yellow-jar/yellow-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/yellow-jar/yellow-jar.png"
@@ -698,7 +715,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/orange-jar/orange-jar.webp 1x, img/product-list/orange-jar/orange-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/orange-jar/orange-jar.webp 1x, img/product-list/orange-jar/orange-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/orange-jar/orange-jar.png"
@@ -722,7 +742,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/green-jar/green-jar.webp 1x, img/product-list/green-jar/green-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/green-jar/green-jar.webp 1x, img/product-list/green-jar/green-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/green-jar/green-jar.png"
@@ -746,7 +769,10 @@
           <li class="product-list__item">
             <a class="product-list__item-image-link" href="#">
               <picture>
-                <source srcset="img/product-list/blue-jar/blue-jar.webp 1x, img/product-list/blue-jar/blue-jar@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="img/product-list/blue-jar/blue-jar.webp 1x, img/product-list/blue-jar/blue-jar@2x.webp 2x"
+                >
                 <img
                   class="product-list__item-image"
                   src="img/product-list/blue-jar/blue-jar.png"
@@ -769,46 +795,158 @@
         </ul>
         <div class="product-pagination products__footer">
           <button class="product-pagination__button product-pagination__button--prev" type="button" disabled>
-            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" fill="none" viewBox="0 0 6 10">
+            <svg
+              class="product-pagination__button-image"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="10"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
               <path
-                class="product-pagination__button-image"
+                class="product-pagination__button-image-element"
                 fill="#7859CF"
                 fill-rule="evenodd"
                 d="M4.8 0 6 1.2 2.4 5 6 8.8 4.8 10 0 5l4.8-5Z"
                 clip-rule="evenodd"
               />
             </svg>
+            <span class="product-pagination__button-text">Назад</span>
           </button>
           <ol class="product-pagination__list">
-            <li class="product-pagination__list-item product-pagination__list-item--current">
-              <button class="product-pagination__list-item-button product-pagination__list-item-button--current" type="button">1</button>
-            </li>
             <li class="product-pagination__list-item">
-              <button class="product-pagination__list-item-button" type="button">2</button>
+              <button
+                class="product-pagination__list-item-button"
+                type="button"
+              >1
+              </button>
+            </li>
+            <li class="product-pagination__list-item product-pagination__list-item--current">
+              <button
+                class="product-pagination__list-item-button product-pagination__list-item-button--current"
+                type="button"
+                disabled
+              >2
+              </button>
             </li>
             <li class="product-pagination__list-item">
               <button class="product-pagination__list-item-button" type="button">3</button>
             </li>
           </ol>
           <button class="product-pagination__button product-pagination__button--next" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" fill="none" viewBox="0 0 6 10">
+            <svg
+              class="product-pagination__button-image"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="10"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
               <path
-                class="product-pagination__button-image"
+                class="product-pagination__button-image-element"
                 fill="#7859CF"
                 fill-rule="evenodd"
                 d="M1.2 0 0 1.2 3.6 5 0 8.8 1.2 10 6 5 1.2 0Z"
                 clip-rule="evenodd"
               />
             </svg>
+            <span class="product-pagination__button-text">Вперёд</span>
           </button>
         </div>
       </section>
     </div>
   </section>
+  <div class="main__map-container">
+    <iframe
+      class="main__map"
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A64b81f9af2950088d7fe1ce8d8843f2a22708965c9b4e4462cc90f788467f181&amp;source=constructor"
+    ></iframe>
+  </div>
 </main>
 
-<footer>
-
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__part-links">
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="./img/logo/logo-tablet-logo-footer-mobile.svg" width="82" height="36" alt="логотип магазина">
+      </a>
+      <h2 class="footer__title">Интернет-магазин кофейных напитков</h2>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__item-link" href="https://vk.com/htmlacademy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+              <path
+                class="social__item-image"
+                fill="#BDBDBD"
+                fill-rule="evenodd"
+                d="M1.4 1.4C0 2.8 0 5.1 0 9.6v.8c0 4.5 0 6.8 1.4 8.2C2.8 20 5.1 20 9.6 20h.8c4.5 0 6.8 0 8.2-1.4 1.4-1.4 1.4-3.7 1.4-8.2v-.8c0-4.5 0-6.8-1.4-8.2C17.2 0 14.9 0 10.4 0h-.8C5.1 0 2.8 0 1.4 1.4Zm2 4.7c0 5.2 2.7 8.3 7.2 8.3h.3v-3c1.7.2 3 1.4 3.4 3h2.4a6.6 6.6 0 0 0-3.4-4.2c1-.6 2.6-2 3-4.1H14c-.5 1.6-1.9 3.1-3.2 3.3V6H8.7v5.8c-1.3-.4-3-2-3-5.8H3.4Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item-link" href="https://ru.pinterest.com/keks_is_html_academy/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+              <path
+                class="social__item-image"
+                fill="#BDBDBD"
+                d="M11 0a11 11 0 0 0-4 21.2c-.1-.8-.2-2.2 0-3.1l1.3-5.5S8 12 8 11c0-1.5.9-2.7 2-2.7 1 0 1.4.7 1.4 1.6 0 1-.6 2.3-1 3.6-.2 1.1.6 2 1.7 2 2 0 3.4-2 3.4-5C15.5 7.8 13.7 6 11 6c-3.2 0-5 2.4-5 4.8 0 1 .4 2 .8 2.5v.3l-.2 1.2c0 .3-.2.3-.4.2-1.4-.6-2.2-2.7-2.2-4.3 0-3.4 2.5-6.6 7.2-6.6 3.9 0 6.8 2.7 6.8 6.3 0 3.8-2.4 6.9-5.7 6.9-1.1 0-2.1-.6-2.5-1.3l-.7 2.6c-.2 1-1 2.2-1.4 3A11 11 0 1 0 11 0Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item-link" href="https://ok.ru/htmlacademy">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+              <path
+                class="social__item-image"
+                fill="#BDBDBD"
+                fill-rule="evenodd"
+                d="M1.4 1.4C0 2.8 0 5.1 0 9.6v.9c0 4.5 0 6.7 1.4 8.1C2.8 20 5.1 20 9.6 20h.9c4.5 0 6.7 0 8.1-1.4 1.4-1.4 1.4-3.7 1.4-8.2v-.9c0-4.5 0-6.7-1.4-8.1C17.2 0 14.9 0 10.4 0h-.9C5 0 2.8 0 1.4 1.4Zm8.6 8.8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0-4.3a1.3 1.3 0 0 1 0 2.5c-.7 0-1.2-.5-1.2-1.2s.5-1.3 1.2-1.3Zm1.2 6.8L13 12c.4-.3.5-.9.3-1.3a.9.9 0 0 0-1.3-.2c-1.2.7-2.8.7-4 0a.9.9 0 0 0-1.3.2c-.2.4 0 1 .3 1.2.6.4 1.2.6 1.8.8L7 14.3c-.3.4-.3 1 0 1.3l.6.3c.3 0 .5-.1.7-.3l1.6-1.7 1.7 1.7a.9.9 0 0 0 1.3-1.3l-1.8-1.6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__part-main">
+    <div class="footer__information-block">
+      <div class="footer__information-block-inner">
+        <h3 class="footer__information-block-title">Интернет-магазин</h3>
+        <ul class="shop">
+          <li class="shop__item">
+            <a class="shop__item-link" href="#">Каталог</a>
+          </li>
+          <li class="shop__item">
+            <a class="shop__item-link" href="#">Доставка</a>
+          </li>
+          <li class="shop__item">
+            <a class="shop__item-link" href="#">Способы оплаты</a>
+          </li>
+          <li class="shop__item">
+            <a class="shop__item-link" href="#">О нас</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__part-main">
+    <div class="footer__information-block">
+      <div class="footer__information-block-inner">
+      <h3 class="footer__information-block-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="footer__part-main">
+    <div class="footer__information-block">
+      <div class="footer__information-block-inner">
+        <h3 class="footer__information-block-title"></h3>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="vendor/nouislider/nouislider.js"></script>
