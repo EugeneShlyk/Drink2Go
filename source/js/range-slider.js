@@ -3,7 +3,7 @@ const rangeSlider = document.getElementById('range-slider');
 const addNoUiSlider = () => {
   if (rangeSlider) {
     noUiSlider.create(rangeSlider, {
-      start: [0, 123],
+      start: [0, 900],
       connect: true,
       step: 1,
       range: {

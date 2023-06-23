@@ -32,12 +32,14 @@
 }
 
 .description-slide__title {
+  margin: 0 0 10px;
+  padding: 0;
+  color: rgba(51, 51, 51, 1);
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.02em;
-  margin: 0 0 10px;
-  padding: 0;
+
   text-align: center;
 }
 
@@ -76,6 +78,20 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .slider-item__part-1 {
+    padding-top: 5px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .description-slide__text-2 {
+    padding-right: 20px;
+  }
+}
+
+
 .description-slide__footer {
   display: grid;
   gap: 20px;
@@ -86,12 +102,14 @@
 }
 
 .description-slide__footer-price {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .description-slide__footer-old-price {
-  margin: 0;
+  margin: 0 6px 0 0 ;
   padding: 0;
   color: rgba(120, 89, 207, 1);
   font-weight: 400;
@@ -108,6 +126,7 @@
 }
 
 .description-slide__footer-buy {
+  width: 113px;
   margin: 0;
   padding: 8px 20px;
   color: rgba(255, 255, 255, 1);

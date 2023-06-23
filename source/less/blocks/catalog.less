@@ -85,7 +85,7 @@
 
 .catalog__filter-form {
   margin: 0;
-  padding: 0 0 40px;
+  padding: 0 0 38px;
 }
 
 @media (min-width: 768px) {
@@ -94,6 +94,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 40px;
+    padding-bottom: 42px;
   }
 }
 
@@ -132,7 +133,7 @@
 
 @media (min-width: 768px) {
   .catalog__box-button {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 137px 1fr;
     width: 277px;
     grid-column: 1 / 4;
     justify-self: center;
@@ -142,11 +143,12 @@
 
 @media (min-width: 1440px) {
   .catalog__box-button {
+    grid-template-columns: 149px 1fr;
     width: 100%;
   }
 }
 
-.catalog__box-button-submit {
+.catalog__button-submit {
   padding: 8px 0;
   margin: 0;
   color: rgba(255, 255, 255, 1);
@@ -159,20 +161,20 @@
   cursor: pointer;
 }
 
-.catalog__box-button-submit:hover,
-.catalog__box-button-submit:focus-visible {
+.catalog__button-submit:hover,
+.catalog__button-submit:focus-visible {
   background-color: rgba(144, 112, 236, 1);
 }
 
-.catalog__box-button-submit:active {
+.catalog__button-submit:active {
   background-color: rgba(89, 60, 172, 1);
 }
 
-.catalog__box-button-submit:disabled {
+.catalog__button-submit:disabled {
   background-color: rgba(189, 189, 189, 1);
 }
 
-.catalog__box-button-reset {
+.catalog__button-reset {
   margin: 0;
   padding: 8px 0;
   color: rgba(120, 89, 207, 1);
@@ -185,18 +187,18 @@
   cursor: pointer;
 }
 
-.catalog__box-button-reset:hover,
-.catalog__box-button-reset:focus-visible {
+.catalog__button-reset:hover,
+.catalog__button-reset:focus-visible {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(144, 112, 236, 1);
 }
 
-.catalog__box-button-reset:active {
+.catalog__button-reset:active {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(89, 60, 172, 1);
 }
 
-.catalog__box-button-reset:disabled {
+.catalog__button-reset:disabled {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(226, 226, 226, 1);
 }

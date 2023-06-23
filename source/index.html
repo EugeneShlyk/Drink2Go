@@ -27,25 +27,25 @@
     </div>
 
     <nav class="header__navigation navigation navigation--closed navigation--nojs">
-      <button class="navigation__button-menu">
+      <button class="navigation__button-menu" aria-label="кнопка открытия меню">
         <span class="visually-hidden">открыть меню</span>
       </button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--active">
-          <a class="navigation__item-link" href="#">Главная</a>
+          <a class="navigation__item-link" href="#" aria-label="">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__item-link" href="#" aria-label="Ссылка на страницу каталога">Каталог</a>
+          <a class="navigation__item-link" href="#" aria-label="на страницу каталога">Каталог</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__item-link" href="#" aria-label="Ссылка на страницу доставки">Доставка</a>
+          <a class="navigation__item-link" href="#" aria-label="на страницу доставки">Доставка</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__item-link" href="#" aria-label="Ссылка на страницу о нас">О нас</a>
+          <a class="navigation__item-link" href="#" aria-label="на страницу о нас">О нас</a>
         </li>
       </ul>
 
-      <a class="navigation__link" href="#">
+      <a class="navigation__link navigation__link--entrance" href="#">
         <svg
           class="navigation__link-image"
           xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@
                   srcset="img/slider/decaf-flat-white/slider-decaf-flat-white-mobile@2x.png 2x"
                   width="280"
                   height="280"
-                  alt="Пример нашего товара"
+                  alt="кофе Декаф флэт Вайт"
                 >
               </picture>
             </div>
@@ -149,7 +149,9 @@
               </p>
               <div class="description-slide__footer">
                 <div class="description-slide__footer-price">
+                  <span class="visually-hidden">старая цена</span>
                   <del class="description-slide__footer-old-price">295₽</del>
+                  <span class="visually-hidden">цена со скидкой</span>
                   <span class="description-slide__footer-new-price">225₽</span>
                 </div>
                 <button class="description-slide__footer-buy" type="button">Заказать</button>
@@ -201,7 +203,7 @@
                   srcset="img/slider/lavender-latte/slider-lavender-latte-mobile@x2.png"
                   width="280"
                   height="280"
-                  alt="Пример нашего товара"
+                  alt="лавандовый латте"
                 >
               </picture>
             </div>
@@ -212,7 +214,10 @@
                 лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
               <div class="description-slide__footer">
                 <div class="description-slide__footer-price">
+                  <span class="visually-hidden">старая цена</span>
                   <del class="description-slide__footer-old-price">285₽</del>
+                  <span class="visually-hidden">цена со скидкой</span>
+
                   <span class="description-slide__footer-new-price">265₽</span>
                 </div>
                 <button class="description-slide__footer-buy" type="button">Заказать</button>
@@ -264,7 +269,7 @@
                   srcset="img/slider/triple-espresso/slider-triple-espresso-mobile@x2.png"
                   width="280"
                   height="280"
-                  alt="Пример нашего товара"
+                  alt="тройной эспрессо"
                 >
               </picture>
             </div>
@@ -276,7 +281,9 @@
                 Колумбии покажет вам, что такое настоящая бодрость</p>
               <div class="description-slide__footer">
                 <div class="description-slide__footer-price">
+                  <span class="visually-hidden">старая цена</span>
                   <del class="description-slide__footer-old-price">395₽</del>
+                  <span class="visually-hidden">цена со скидкой</span>
                   <span class="description-slide__footer-new-price">375₽</span>
                 </div>
                 <button class="description-slide__footer-buy" type="button">Заказать</button>
@@ -287,7 +294,7 @@
       </div>
     </div>
 
-    <button class="image-slider__button image-slider__button-prev" type="button">
+    <button class="image-slider__button image-slider__button-prev" type="button" aria-label="прокрутка слайдера назад">
       <svg
         class="image-slider__button-image image-slider__button-image--prev"
         xmlns="http://www.w3.org/2000/svg"
@@ -343,40 +350,23 @@
       <h2 class="advantages__title">Преимущества</h2>
       <span class="advantages__title-text">Главные причины выбрать Drink2Go</span>
       <ul class="advantages__list">
-        <li class="advantages__item">
-          <img src="img/advantages/advantage-speed.svg" width="50" height="56" alt="скорость">
-          <div class="advantages__item-inner">
-            <h3 class="advantages__item-inner-title">Скорость</h3>
-            <p class="advantages__item-inner-text">Готовый напиток всегда под рукой — просто открой банку</p>
-          </div>
+        <li class="advantages__item advantages__item-speed">
+          <h3 class="advantages__item-inner-title">Скорость</h3>
+          <p class="advantages__item-inner-text">Готовый напиток всегда под рукой — просто открой банку</p>
         </li>
-        <li class="advantages__item">
-          <img src="img/advantages/advantage-convenience.svg" width="52" height="56" alt="удобство">
-          <div class="advantages__item-inner">
-            <h3 class="advantages__item-inner-title">Удобство</h3>
-            <p class="advantages__item-inner-text">Легко помещается и в карман,
-              и в маленькую сумочку</p>
-          </div>
+        <li class="advantages__item advantages__item-convenience">
+          <h3 class="advantages__item-inner-title">Удобство</h3>
+          <p class="advantages__item-inner-text">Легко помещается и в карман,<br>
+            и в маленькую сумочку</p>
         </li>
-        <li class="advantages__item">
-          <img src="img/advantages/advantage-cheerfulness.svg" width="42" height="56" alt="бодрость">
-          <div class="advantages__item-inner">
-            <h3 class="advantages__item-inner-title">Бодрость</h3>
-            <p class="advantages__item-inner-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
-          </div>
+        <li class="advantages__item advantages__item-cheerfulness">
+          <h3 class="advantages__item-inner-title">Бодрость</h3>
+          <p class="advantages__item-inner-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
         </li>
-        <li class="advantages__item">
-          <img
-            src="img/advantages/advantages-environmental-friendliness.svg"
-            width="46"
-            height="56"
-            alt="экологичность"
-          >
-          <div class="advantages__item-inner">
-            <h3 class="advantages__item-inner-title">Экологичность</h3>
-            <p class="advantages__item-inner-text">Вся упаковка сделана
-              из перерабатываемых материалов</p>
-          </div>
+        <li class="advantages__item advantages__item-environmental-friendliness">
+          <h3 class="advantages__item-inner-title">Экологичность</h3>
+          <p class="advantages__item-inner-text">Вся упаковка сделана<br>
+            из перерабатываемых материалов</p>
         </li>
       </ul>
     </div>
@@ -422,7 +412,7 @@
                   type="number"
                   min="0"
                   max="900"
-                  placeholder="123"
+                  placeholder="900"
                   id="input-max-price"
                 >
               </label>
@@ -525,8 +515,8 @@
             </ul>
           </fieldset>
           <div class="catalog__box-button">
-            <button class="catalog__box-button-submit" type="submit">Применить</button>
-            <input class="catalog__box-button-reset" type="reset">
+            <button class="catalog__button-submit" type="submit">Применить</button>
+            <input class="catalog__button-reset" type="reset">
           </div>
 
         </form>
@@ -566,8 +556,10 @@
             <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
               с натуральным фермерским молоком</p>
             <div class="product-list__item-footer">
+              <span class="visually-hidden">цена</span>
               <span class="product-list__item-footer-text">225₽</span>
-              <button class="product-list__item-button" type="button">В корзину</button>
+              <button class="product-list__item-button" type="button">
+                <span>В корзину</span></button>
             </div>
           </li>
           <li class="product-list__item">
@@ -593,6 +585,7 @@
             <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
               с натуральным фермерским молоком</p>
             <div class="product-list__item-footer">
+              <span class="visually-hidden">цена</span>
               <span class="product-list__item-footer-text">225₽</span>
               <button class="product-list__item-button" type="button">В корзину</button>
             </div>
@@ -620,6 +613,7 @@
             <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
               с натуральным фермерским молоком</p>
             <div class="product-list__item-footer">
+              <span class="visually-hidden">цена</span>
               <span class="product-list__item-footer-text">225₽</span>
               <button class="product-list__item-button" type="button">В корзину</button>
             </div>
@@ -647,6 +641,7 @@
             <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
               с натуральным фермерским молоком</p>
             <div class="product-list__item-footer">
+              <span class="visually-hidden">цена</span>
               <span class="product-list__item-footer-text">225₽</span>
               <button class="product-list__item-button" type="button">В корзину</button>
             </div>
@@ -674,6 +669,7 @@
             <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
               с натуральным фермерским молоком</p>
             <div class="product-list__item-footer">
+              <span class="visually-hidden">цена</span>
               <span class="product-list__item-footer-text">225₽</span>
               <button class="product-list__item-button" type="button">В корзину</button>
             </div>
@@ -701,93 +697,97 @@
             <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
               с натуральным фермерским молоком</p>
             <div class="product-list__item-footer">
+              <span class="visually-hidden">цена</span>
               <span class="product-list__item-footer-text">225₽</span>
               <button class="product-list__item-button" type="button">В корзину</button>
             </div>
           </li>
-          <li class="product-list__item">
-            <a class="product-list__item-image-link" href="#">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="img/product-list/orange-jar/orange-jar.webp 1x, img/product-list/orange-jar/orange-jar@2x.webp 2x"
-                >
-                <img
-                  class="product-list__item-image"
-                  src="img/product-list/orange-jar/orange-jar.png"
-                  srcset="img/product-list/orange-jar/orange-jar@2x.png 2x"
-                  width="130"
-                  height="188"
-                  alt="кофе в оранжевой банке"
-                >
-              </picture>
-            </a>
-            <a class="product-list__item-title-link" href="#">
-              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
-              с натуральным фермерским молоком</p>
-            <div class="product-list__item-footer">
-              <span class="product-list__item-footer-text">225₽</span>
-              <button class="product-list__item-button" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="product-list__item">
-            <a class="product-list__item-image-link" href="#">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="img/product-list/green-jar/green-jar.webp 1x, img/product-list/green-jar/green-jar@2x.webp 2x"
-                >
-                <img
-                  class="product-list__item-image"
-                  src="img/product-list/green-jar/green-jar.png"
-                  srcset="img/product-list/green-jar/green-jar@2x.png 2x"
-                  width="130"
-                  height="188"
-                  alt="кофе в зелёной банке"
-                >
-              </picture>
-            </a>
-            <a class="product-list__item-title-link" href="#">
-              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
-              с натуральным фермерским молоком</p>
-            <div class="product-list__item-footer">
-              <span class="product-list__item-footer-text">225₽</span>
-              <button class="product-list__item-button" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="product-list__item">
-            <a class="product-list__item-image-link" href="#">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="img/product-list/blue-jar/blue-jar.webp 1x, img/product-list/blue-jar/blue-jar@2x.webp 2x"
-                >
-                <img
-                  class="product-list__item-image"
-                  src="img/product-list/blue-jar/blue-jar.png"
-                  width="130"
-                  height="188"
-                  alt="кофе в синей банке"
-                >
-              </picture>
-            </a>
-            <a class="product-list__item-title-link" href="#">
-              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>
-              с натуральным фермерским молоком</p>
-            <div class="product-list__item-footer">
-              <span class="product-list__item-footer-text">225₽</span>
-              <button class="product-list__item-button" type="button">В корзину</button>
-            </div>
-          </li>
+          <!--          <li class="product-list__item">-->
+          <!--            <a class="product-list__item-image-link" href="#">-->
+          <!--              <picture>-->
+          <!--                <source-->
+          <!--                  type="image/webp"-->
+          <!--                  srcset="img/product-list/orange-jar/orange-jar.webp 1x, img/product-list/orange-jar/orange-jar@2x.webp 2x"-->
+          <!--                >-->
+          <!--                <img-->
+          <!--                  class="product-list__item-image"-->
+          <!--                  src="img/product-list/orange-jar/orange-jar.png"-->
+          <!--                  srcset="img/product-list/orange-jar/orange-jar@2x.png 2x"-->
+          <!--                  width="130"-->
+          <!--                  height="188"-->
+          <!--                  alt="кофе в оранжевой банке"-->
+          <!--                >-->
+          <!--              </picture>-->
+          <!--            </a>-->
+          <!--            <a class="product-list__item-title-link" href="#">-->
+          <!--              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>-->
+          <!--            </a>-->
+          <!--            <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>-->
+          <!--              с натуральным фермерским молоком</p>-->
+          <!--            <div class="product-list__item-footer">-->
+          <!--              <span  class="visually-hidden">цена</span>-->
+          <!--              <span class="product-list__item-footer-text">225₽</span>-->
+          <!--              <button class="product-list__item-button" type="button">В корзину</button>-->
+          <!--            </div>-->
+          <!--          </li>-->
+          <!--          <li class="product-list__item">-->
+          <!--            <a class="product-list__item-image-link" href="#">-->
+          <!--              <picture>-->
+          <!--                <source-->
+          <!--                  type="image/webp"-->
+          <!--                  srcset="img/product-list/green-jar/green-jar.webp 1x, img/product-list/green-jar/green-jar@2x.webp 2x"-->
+          <!--                >-->
+          <!--                <img-->
+          <!--                  class="product-list__item-image"-->
+          <!--                  src="img/product-list/green-jar/green-jar.png"-->
+          <!--                  srcset="img/product-list/green-jar/green-jar@2x.png 2x"-->
+          <!--                  width="130"-->
+          <!--                  height="188"-->
+          <!--                  alt="кофе в зелёной банке"-->
+          <!--                >-->
+          <!--              </picture>-->
+          <!--            </a>-->
+          <!--            <a class="product-list__item-title-link" href="#">-->
+          <!--              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>-->
+          <!--            </a>-->
+          <!--            <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>-->
+          <!--              с натуральным фермерским молоком</p>-->
+          <!--            <div class="product-list__item-footer">-->
+          <!--              <span  class="visually-hidden">цена</span>-->
+          <!--              <span class="product-list__item-footer-text">225₽</span>-->
+          <!--              <button class="product-list__item-button" type="button">В корзину</button>-->
+          <!--            </div>-->
+          <!--          </li>-->
+          <!--          <li class="product-list__item">-->
+          <!--            <a class="product-list__item-image-link" href="#">-->
+          <!--              <picture>-->
+          <!--                <source-->
+          <!--                  type="image/webp"-->
+          <!--                  srcset="img/product-list/blue-jar/blue-jar.webp 1x, img/product-list/blue-jar/blue-jar@2x.webp 2x"-->
+          <!--                >-->
+          <!--                <img-->
+          <!--                  class="product-list__item-image"-->
+          <!--                  src="img/product-list/blue-jar/blue-jar.png"-->
+          <!--                  width="130"-->
+          <!--                  height="188"-->
+          <!--                  alt="кофе в синей банке"-->
+          <!--                >-->
+          <!--              </picture>-->
+          <!--            </a>-->
+          <!--            <a class="product-list__item-title-link" href="#">-->
+          <!--              <h3 class="product-list__item-title">Декаф Флэт Уайт</h3>-->
+          <!--            </a>-->
+          <!--            <p class="product-list__item-text">Кофе без кофеина из Эфиопии <br>-->
+          <!--              с натуральным фермерским молоком</p>-->
+          <!--            <div class="product-list__item-footer">-->
+          <!--              <span  class="visually-hidden">цена</span>-->
+          <!--              <span class="product-list__item-footer-text">225₽</span>-->
+          <!--              <button class="product-list__item-button" type="button">В корзину</button>-->
+          <!--            </div>-->
+          <!--          </li>-->
         </ul>
         <div class="product-pagination products__footer">
-          <button class="product-pagination__button product-pagination__button--prev" type="button" disabled>
+          <button class="product-pagination__button product-pagination__button--prev" type="button">
             <svg
               class="product-pagination__button-image"
               xmlns="http://www.w3.org/2000/svg"
@@ -809,6 +809,7 @@
           <ol class="product-pagination__list">
             <li class="product-pagination__list-item">
               <button
+                aria-label="на первую часть каталога"
                 class="product-pagination__list-item-button"
                 type="button"
               >1
@@ -816,6 +817,7 @@
             </li>
             <li class="product-pagination__list-item product-pagination__list-item--current">
               <button
+                aria-label="на вторую часть каталога товаров"
                 class="product-pagination__list-item-button product-pagination__list-item-button--current"
                 type="button"
                 disabled
@@ -823,7 +825,12 @@
               </button>
             </li>
             <li class="product-pagination__list-item">
-              <button class="product-pagination__list-item-button" type="button">3</button>
+              <button
+                aria-label="на третью часть каталога товаров"
+                class="product-pagination__list-item-button"
+                type="button"
+              >3
+              </button>
             </li>
           </ol>
           <button class="product-pagination__button product-pagination__button--next" type="button">
@@ -860,16 +867,26 @@
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__part-links">
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="на сайт html academy">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo/logo-desktop-logo-footer.svg" width="170" height="36">
-          <img class="footer__logo-image" src="img/logo/logo-tablet-logo-footer-mobile.svg" width="82" height="36" alt="логотип магазина">
+          <img
+            class="footer__logo-image"
+            src="img/logo/logo-tablet-logo-footer-mobile.svg"
+            width="82"
+            height="36"
+            alt="логотип магазина"
+          >
         </picture>
       </a>
       <h2 class="footer__title">Интернет-магазин кофейных напитков</h2>
       <ul class="social">
         <li class="social__item">
-          <a class="social__item-link" href="https://vk.com/htmlacademy">
+          <a
+            class="social__item-link"
+            href="https://vk.com/htmlacademy"
+            aria-label="на группу в социальной сети в контакте"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
               <path
                 class="social__item-image"
@@ -882,7 +899,11 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link" href="https://ru.pinterest.com/keks_is_html_academy/">
+          <a
+            class="social__item-link"
+            href="https://ru.pinterest.com/keks_is_html_academy/"
+            aria-label="на страницу сайта принтерест"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
               <path
                 class="social__item-image"
@@ -893,7 +914,11 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__item-link" href="https://ok.ru/htmlacademy">
+          <a
+            class="social__item-link"
+            href="https://ok.ru/htmlacademy"
+            aria-label="на сообщество в социальной сети Одноклассники"
+          >
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
               <path
                 class="social__item-image"
@@ -948,12 +973,16 @@
     </div>
   </div>
   <div class="footer__part-main">
-    <div class="footer__information-block">
+    <div class="footer__information-block footer__information-block--contacts">
       <div class="footer__information-block-inner">
         <h3 class="footer__information-block-title">Контакты</h3>
         <ul class="footer__main-list">
           <li class="footer__main-list-item footer__main-list-item--secondary">
-            <a class="footer__main-list-item-link-secondary footer__main-list-item-link-secondary--address" href="#">Санкт-Петербург,
+            <a
+              class="footer__main-list-item-link-secondary footer__main-list-item-link-secondary--address"
+              href="#"
+              aria-label="наш адрес"
+            >Санкт-Петербург,
               набережная реки Карповки, дом
               5</a>
           </li>
@@ -961,6 +990,7 @@
             <a
               class="footer__main-list-item-link-secondary footer__main-list-item-link-secondary--phone"
               href="tel:+79999999999"
+              aria-label="наш телефон"
             >+7 (999) 999-99-99</a>
           </li>
         </ul>
@@ -970,7 +1000,11 @@
   </div>
 
   <div class="footer__part-main footer__part-main--bottom">
-    <a class="footer__html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+    <a
+      class="footer__html-academy-link"
+      href="https://htmlacademy.ru/intensive/adaptive"
+      aria-label="на сайт html academy"
+    >
       <span class="footer__html-academy-link-text">Разработано в HTML Academy</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="none">
         <path
