@@ -9,6 +9,8 @@ import csso from 'postcss-csso';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import rename from 'gulp-rename';
 import { stacksvg } from "gulp-stacksvg";
 import { deleteAsync } from 'del';
 import browser from 'browser-sync';
@@ -80,6 +82,16 @@ export function optimizeVector () {
     .pipe(gulp.dest('build/img'));
 }
 
+export const sprite = () => {
+  return gulp.src('source/img/social-list/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
+
 export function createStack () {
   return gulp.src('source/img/icons/**/*.svg')
     .pipe(svgo())
@@ -129,6 +141,7 @@ function compileProject (done) {
     processScripts,
     noUiScripts,
     optimizeVector,
+    sprite,
     createStack,
     copyAssets,
     optimizeImages,

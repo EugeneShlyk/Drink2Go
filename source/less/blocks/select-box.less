@@ -15,6 +15,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .select-box {
+    margin-top: -3px;
+    margin-bottom: 23px;
+  }
+}
+
 .select-box::after {
   content: "";
   position: absolute;
@@ -24,10 +31,7 @@
   display: block;
   width: 10px;
   height: 6px;
-  background-image: url("../../img/product-list/select-img.svg");
-  background-position: 50%;
-  background-size: 10px 6px;
-  background-repeat: no-repeat;
+  background: rgba(248, 248, 248, 1) url("../../img/product-list/select-img.svg") 50% / 10px 6px no-repeat;
   pointer-events: none;
 }
 
