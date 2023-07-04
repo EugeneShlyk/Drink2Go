@@ -5,4 +5,3 @@ import { workSlider } from './slider.js';
 toggleMenuHandler();
 addNoUiSlider();
 workSlider();
-
