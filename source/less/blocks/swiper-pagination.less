@@ -10,20 +10,20 @@
 
 .swiper-pagination-bullet {
   position: relative;
+  top: -56px;
   width: 62px;
-  height: 24px;
-  padding: 10px 0;
+  height: 4px;
+  padding: 0;
   box-sizing: border-box;
   border-radius: 0;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
 }
 
-.swiper-pagination-bullet::after {
-  content: "";
-  position: absolute;
-  top: -38px;
-  left: 0;
-  width: 100%;
-  height: 4px;
+.swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active),
+.swiper-pagination-bullet:focus-visible:not(.swiper-pagination-bullet-active) {
+  background-color: rgba(144, 112, 236, 1);
+}
+
+.swiper-pagination-bullet-active {
   background-color: rgba(120, 89, 207, 1);
 }
